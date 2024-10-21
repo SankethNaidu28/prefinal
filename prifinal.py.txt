@@ -1,0 +1,15 @@
+import calendar
+
+# Function to display the calendar
+def display_calendar(year, month):
+    # Create a TextCalendar instance
+    cal = calendar.TextCalendar()
+    # Print the month's calendar
+    print(cal.formatmonth(year, month))
+
+# Input year and month
+year = int(input("Enter year (e.g., 2024): "))
+month = int(input("Enter month (1-12): "))
+
+# Display the calendar for the given month and year
+display_calendar(year, month)
